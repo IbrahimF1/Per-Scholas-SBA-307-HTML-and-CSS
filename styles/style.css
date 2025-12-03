@@ -31,12 +31,6 @@ h1,
 h2,
 h3,
 h4,
-h5 {}
-
-h1,
-h2,
-h3,
-h4,
 h5,
 p {
     font-family: 'Charis SIL';
@@ -119,7 +113,7 @@ main {
 
 /* https://www.w3schools.in/css3/gradient-text */
 #mainHeroText {
-    background: linear-gradient(to right, rgb(224, 137, 142), rgb(42, 74, 146));
+    background: linear-gradient(to right, rgb(177, 32, 40), rgb(42, 146, 108));
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
