@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Charis%20SIL:700|Sanchez:400');
+
+/* --- Base --- */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    background-color: rgb(21, 5, 6);
+    font-family: 'Sanchez', serif;
+    color: rgb(211, 211, 211);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Charis SIL', serif;
+    color: rgb(211, 211, 211);
+}
+
+/* --- Main Layout --- */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3rem;
+    width: 100%;
+}
+
+#pageTitle {
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+#projectsList {
+    width: 80%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article {
+    background-color: rgba(38, 28, 46, 0.742);
+    border-radius: 1.25rem;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+article h2 {
+    color: rgb(224, 137, 142);
+    margin-top: 0;
+}
+
+article p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+/* --- Custom Buttons --- */
+button {
+    display: inline-flex;
+    padding: 0.7em 1.6em;
+    background-color: rgba(29, 95, 181, 0.671);
+    border: 2px solid rgb(21, 5, 6);
+    border-radius: 0.6rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+    font-family: 'Sanchez';
+    color: rgb(245, 214, 216);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background-color: rgb(54, 98, 201);
+}
+
+button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button a:hover {
+    text-decoration: none;
+    color: white;
+}

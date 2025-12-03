@@ -1,0 +1,235 @@
+/* https://www.realtimecolors.com/?colors=f8e3e4-150506-e0898e-22806e-4c74d0&fonts=Charis%20SIL-Sanchez */
+
+@import url('https://fonts.googleapis.com/css?family=Charis%20SIL:700|Sanchez:400');
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    line-height: 1.1
+        /* reduce vertical spacing between text when wrapping */
+}
+
+body,
+html {
+    margin: 0 auto;
+    padding: 0;
+    height: auto;
+    min-height: 100%;
+    /* prevents body clipping the top of screen */
+    box-sizing: border-box;
+    background-color: rgb(21, 5, 6);
+    background-image: url(../assets/background.gif);
+    font-family: 'Sanchez';
+    font-weight: 400;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    font-family: 'Charis SIL';
+    font-weight: 700;
+    color: rgb(211, 211, 211);
+    margin-block: 0.05em;
+}
+
+
+html {
+    font-size: 100%;
+}
+
+/* 16px */
+
+h1 {
+    font-size: 3.210rem;
+    /* 67.36px */
+}
+
+h2 {
+    font-size: 2.958rem;
+    /* 50.56px */
+}
+
+h3 {
+    font-size: 2.369rem;
+    /* 37.92px */
+}
+
+h4 {
+    font-size: 1.5rem;
+    /* 28.48px */
+}
+
+h5 {
+    font-size: 1.333rem;
+    /* 21.28px */
+}
+
+small {
+    font-size: 0.750rem;
+    /* 12px */
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    height: 90%;
+    margin: 0 auto;
+    /* border-style: solid; */
+    padding: 4%;
+}
+
+#mainHero {
+    width: 30%;
+    height: 90%;
+    /* border-style: solid; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 5%;
+    background-color: rgba(38, 28, 46, 0.742);
+    border-radius: 1.25rem;
+}
+
+#mainInfo {
+    margin: 5%;
+    margin-right: 10%;
+    width: 50%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* https://www.w3schools.in/css3/gradient-text */
+#mainHeroText {
+    background: linear-gradient(to right, rgb(224, 137, 142), rgb(42, 74, 146));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+/* BUTTONS AND LINKS — Elegant Minimalist Revamp */
+
+button,
+a.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7em 1.6em;
+    border: 2px solid rgb(21, 5, 6);
+    background-color: rgba(29, 95, 181, 0.671);
+    color: rgb(245, 214, 216);
+    font-family: 'Sanchez', serif;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    border-radius: 0.6rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 0 0 rgba(54, 98, 201, 0);
+}
+
+/* glow on hover */
+button:hover,
+a.button:hover,
+button:focus,
+a.button:focus {
+    background-color: rgb(54, 98, 201);
+    color: rgb(245, 245, 245);
+    border-color: rgb(96, 142, 230);
+    box-shadow: 0 0 8px rgba(96, 142, 230, 0.4);
+    transform: translateY(-1px);
+    outline: none;
+}
+
+/* pressed state */
+button:active,
+a.button:active {
+    background-color: rgb(43, 78, 161);
+    border-color: rgb(54, 98, 201);
+    box-shadow: 0 0 4px rgba(54, 98, 201, 0.25) inset;
+    transform: translateY(0);
+}
+
+/* Disabled */
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    background-color: rgba(54, 98, 201, 0.05);
+    border-color: rgb(21, 39, 81);
+}
+
+/* Minimal link style - subtle highlight and underline animation */
+a {
+    color: rgb(212, 212, 212);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.25s ease;
+}
+
+/* a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0%;
+    height: 1px;
+    background-color: currentColor;
+    transition: width 0.25s ease;
+} */
+
+a:hover,
+a:focus {
+    color: rgb(174, 192, 234);
+}
+
+/* a:hover::after,
+a:focus::after {
+    width: 100%;
+} */
+
+button:hover a.button,
+button:hover a {
+    background-color: rgb(54, 98, 201);
+    color: rgb(245, 245, 245);
+    border-color: rgb(96, 142, 230);
+    box-shadow: 0 0 8px rgba(96, 142, 230, 0.4);
+    transform: translateY(-1px);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1350px) {
+    html {
+        font-size: 80%;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    #mainHero {
+        width: 90%
+    }
+
+    #profilePic {
+        width: 30%;
+    }
+}

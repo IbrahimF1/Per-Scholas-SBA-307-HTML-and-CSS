@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Charis%20SIL:700|Sanchez:400');
+
+/* --- Base --- */
+body, html {
+    margin: 0; padding: 0;
+    background-color: rgb(21, 5, 6);
+    font-family: 'Sanchez', serif;
+    color: rgb(211, 211, 211);
+}
+
+h1, h3 { font-family: 'Charis SIL', serif; color: inherit; }
+
+/* --- Main Layout --- */
+main {
+    display: flex; flex-direction: column; align-items: center;
+    padding: 4%; gap: 3rem;
+}
+
+#aboutSection {
+    width: 80%;
+    max-width: 900px;
+    background-color: rgba(38, 28, 46, 0.742);
+    border-radius: 1.25rem;
+    padding: 3rem;
+    text-align: left;
+}
+
+#aboutSection p { font-size: 1.2rem; line-height: 1.8; margin-bottom: 1.5rem; }
+
+/* --- Gallery --- */
+#gallerySection { width: 90%; max-width: 1200px; text-align: center; }
+#gallerySection h3 { font-size: 1.8rem; margin-bottom: 1rem; }
+
+#galleryGrid {
+    display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;
+}
+
+#galleryGrid img {
+    height: 250px; flex-grow: 1; object-fit: cover;
+    border-radius: 0.5rem;
+    background-color: rgba(38, 28, 46, 0.5);
+    padding: 5px;
+    transition: transform 0.3s;
+}
+
+#galleryGrid img:hover { transform: scale(1.02); }
